@@ -1,7 +1,22 @@
 import { ComponentA } from "@/components/rerender/ComponentA";
 import { ExampleA } from "@/pageContainers/rerender/ExampleA";
-import { Button, List, Typography } from "@mui/material";
+import { Button, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
+
+
+const linksConfig = [{
+    link:'/rerender/exampleA',
+    content:'Example A: react re-render'
+},
+{
+    link:'/rerender/exampleB',
+    content:'Example B: pass a react element as a prop'
+},
+{
+    link:'/rerender/exampleC',
+    content:'Example C: pass a render content function  as a prop'
+}
+]
 
 export const Rerennder = () => {
     return (
@@ -10,15 +25,23 @@ export const Rerennder = () => {
          Explore how react rerender works:
         </Typography>
         <List>
-            <li>What is a React Component, and what is a React Element</li>
-            <li>How React rerender works</li>
+            <ListItem>- What is a React Component, and what is a React Element</ListItem>
+            <ListItem>- How React rerender works</ListItem>
         </List>
-        <Button>
-            <Link href='/rerender/exampleA'>Example A</Link>
-        </Button>
-        <Button>
-            <Link href='/rerender/exampleB'>Example B</Link>
-        </Button>
+        <List>
+            {
+                linksConfig.map((linkConfig,index) => {
+                    return (
+                        <ListItem key={index}>
+                            <Link href={linkConfig.link}>
+                                <Button variant="contained">{linkConfig.content}</Button>
+                            </Link>
+                        </ListItem>
+                    )
+                })
+            }
+        </List>
+       
         </div>
         
     )
