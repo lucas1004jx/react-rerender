@@ -1,6 +1,7 @@
 import { ComponentA } from "@/components/rerender/ComponentA";
 import { ExampleA } from "@/pageContainers/rerender/ExampleA";
 import { Button, List, ListItem, Typography } from "@mui/material";
+import { link } from "fs";
 import Link from "next/link";
 
 
@@ -15,6 +16,10 @@ const linksConfig = [{
 {
     link:'/rerender/exampleC',
     content:'Example C: pass a render content function  as a prop'
+},
+{
+    link:'/rerender/exampleD',
+    content:'Example D: conditional render'
 }
 ]
 
