@@ -1,5 +1,5 @@
 import { ComponentA } from "@/components/rerender/ComponentA";
-import { ExampleA } from "@/sectionContainer/rerender/ExampleA";
+import { ExampleA } from "@/pageContainers/rerender/ExampleA";
 import { Button, List, Typography } from "@mui/material";
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import { ExampleA } from "@/sectionContainer/rerender/ExampleA";
+import { ExampleA } from "@/pageContainers/rerender/ExampleA";
 
 export default function ExampleAPage() {
     return <ExampleA />
