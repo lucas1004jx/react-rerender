@@ -17,12 +17,9 @@ export const ExampleD:FC<Props> = ({content}) => {
         <>
         {
             count % 4 === 0 ?  
-            <div>
+            <div >
                 <Typography>
-                ExampleC: This is an example of passing a react component as prop and render the prop as a child component.
-                </Typography>
-                <Typography>
-                    Now the prop is re-rendered when the state changed. Because each render of the ExampleC will create a new instance of the content element.
+                ExampleD: This is an example of conditional render.
                 </Typography>
                 <Button onClick={() => setCount(count+1)} variant="contained">Increment count: {count}</Button>
             <Typography>
@@ -34,10 +31,7 @@ export const ExampleD:FC<Props> = ({content}) => {
         </div> :  
         <div>
             <Typography>
-            ExampleC: This is an example of passing a react component as prop and render the prop as a child component.
-            </Typography>
-            <Typography>
-                Now the prop is re-rendered when the state changed. Because each render of the ExampleC will create a new instance of the content element.
+            ExampleD: This is an example of conditional render.
             </Typography>
             <Button onClick={() => setCount(count+1)} variant="contained">Increment count: {count}</Button>
            <Typography>

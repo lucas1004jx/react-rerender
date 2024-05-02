@@ -7,6 +7,11 @@ import { useState } from "react";
 export const ExampleA = () => {
     console.log('-------------ExampleA-------------');
     const [count,setCount] = useState(0);
+    //     console.log('ComponentA',ComponentA);
+    //   console.log('<ComponentA />',<ComponentA />);
+
+      
+  
     return (
         <div>
             <Typography>

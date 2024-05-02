@@ -20,10 +20,19 @@ const linksConfig = [{
 {
     link:'/rerender/exampleD',
     content:'Example D: conditional render'
+},
+{
+    link:'/rerender/exampleE',
+    content:'Example E: why key is important when render an array of elements'
+},
+{
+    link:'/rerender/exampleF',
+    content:'Example F:  declare a component inside a component'
 }
 ]
 
 export const Rerennder = () => {
+
     return (
         <div>
         <Typography variant="h4">
@@ -32,6 +41,8 @@ export const Rerennder = () => {
         <List>
             <ListItem>- What is a React Component, and what is a React Element</ListItem>
             <ListItem>- How React rerender works</ListItem>
+            <ListItem>- How does the prop "key" play a part in the re render</ListItem>
+            <ListItem>- Why define a component inside a component is an anti-pattern</ListItem>
         </List>
         <List>
             {
